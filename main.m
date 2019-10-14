@@ -1,3 +1,5 @@
+hearingAidF('late_cafe.wav', 6, 90, [3000 4000 5000 9000], 'new_sound')
+
 function y = denoiseEm(x);
 
 [thr,sorh,keepapp]=ddencmp( 'den' , 'wv' ,x);  
@@ -176,5 +178,3 @@ title('Spectrogram of Adjusted Signal 2');
 sound(y,fs);
 %audiowrite(y,fs,nbits,'linear',newfile);
 audiowrite('temp_file.wav',y,fs);
-
-hearingAidF('late_cafe.wav', 6, 90, [3000 4000 5000 9000], 'new_sound')
